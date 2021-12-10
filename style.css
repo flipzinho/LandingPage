@@ -1,0 +1,94 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans:wght@500&family=Montserrat&family=Montserrat+Alternates:wght@500&display=swap');
+html{
+    scroll-behavior: smooth;
+}
+p{
+    text-align: left; font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif; line-height: 1.6; color: black;
+}
+.grid-content{
+    max-width: 1200px; margin: auto;
+}
+ul li a:after{
+    position: absolute; background: rgb(255, 9, 9);height: 3px; width: 0; left: 0; bottom: 0px; content: "";transition: 0.3s;}
+    ul li a:hover:after{
+        width: 100%;}
+        ul li a {
+            text-decoration: none; color: white; letter-spacing: 0.5px; position: relative; padding: 0 10px; }
+
+
+    .grid-content{
+        display: grid; grid-template-columns: repeat(4, 1fr); counter-reset: grid-counter; gap: 20px; padding-top: 100px; color: white;
+    }
+    .bg{
+        background-color: rgb(196, 237, 100);
+    }
+header{
+position: fixed;  position: fixed; top: 0; left: 0; right: 0; width: 100%; z-index: 1;   
+}
+.section{
+height: 100vh; background-image: url(images/pattern-randomized.svg); background-position: center; 
+}
+.container{
+    margin-top: 30px;
+}
+
+
+
+section{
+    height: 100vh;
+}
+.grid{
+background-color: rgb(202, 127, 57); color: white; 
+}
+#container{
+    position: absolute;
+}
+footer{
+   
+}
+
+footer ul{text-decoration: none; list-style: none; padding: 0}
+.grid p{
+    line-height: 1.9;color: white; 
+}
+h2{
+    font-family: 'Montserrat', sans-serif;
+}
+@media(max-width: 770px){
+.section{
+    display: flex; justify-content: center; align-items: center; 
+}
+}
+@media(max-width: 800px){
+    .section {
+        display: grid; grid-template-columns: 1fr;color: black; padding-top: 40px; height: 100%; 
+    }
+   body{
+       overflow-y: hidden;
+   }
+    .section h1{
+        display: flex; justify-content: center;
+    }
+    .grid-content{
+        display: grid; grid-template-columns: 1fr; 
+    }
+        .grid{
+          height: max-content;
+        }
+    .section img{
+        max-width: 400px; padding-bottom: 30px;
+    } 
+    .grid > .container.pt-5{
+        display: grid; grid-template-columns: repeat(1fr); z-index: 1; 
+    }
+    .bg img{
+        display: none;
+    }
+    ul li a:after{
+        position: absolute; background: rgb(255, 9, 9);height: 3px; width: 0; left: 0; bottom: 0px; content: "";transition: 0.3s;}
+        ul li a:hover:after{
+            width: 0%;}
+            ul li a {
+                text-decoration: none; color: white; letter-spacing: 0.5px; position: relative; padding: 0 10px; }
+}
